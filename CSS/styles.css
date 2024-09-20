@@ -1,0 +1,80 @@
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Some Variables */
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+    --background-color: #d5e1ef;
+}
+
+/* Body Styling */
+
+body {
+   font-family: var(--font-family);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: var(--background-color);
+}
+
+/* Card Styling */
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+
+.qr-code {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--Slate-900);
+}
+
+p {
+    font-size: 15px;
+    margin-top: 10px;
+    color: var(--Slate-500);
+}
+
+/* Attribution Styling */
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--Slate-500);
+  }
+  
+  .attribution a {
+    color: var(--Slate-500);
+    text-decoration: none;
+  }
+  
+  .attribution a:hover {
+    color: var(--Slate-900);
+    text-decoration: underline;
+  }
